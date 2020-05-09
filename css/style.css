@@ -1,0 +1,475 @@
+/* ここから下に記載していく */
+
+/* /* 幅と高さの適用方法を制御 */
+* {
+  box-sizing: border-box;
+} 
+
+
+/* ヘッダー */
+.header {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  /* padding-top: 150px; */
+}
+.header-wrapper {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* position: fixed; */
+}
+
+
+ul {
+  display: flex;
+}
+ul li {
+  font-size: 21px;
+  text-decoration: none;
+  margin: 50px 25px;
+}
+a:hover {
+  background-color: yellow;
+}
+
+.parallax-window {
+  min-height: 800px;
+  background: transparent;
+}
+
+.parallax-slider {
+  top: 0;
+  left: 0;
+}
+
+/* ■メインビジュアル */
+.box_main {
+  width:  1200px;
+  /* height: auto; */
+  height: 400px;
+  background: pink;
+  /* background: url(../img/mainbg.png) no-repeat center center;  */
+  background-image: url("../img/mainbg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 0 auto 60px;
+  /* アブソリュートの親 */
+  position: relative;
+}
+/* positionで調整する レラティブ */
+.box_main .text-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.box_main .title {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  line-height: 50px;
+  letter-spacing: 2px;
+  margin: 0 auto 30px;
+  }
+.box_main .text {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+  }
+  
+
+
+/* ■About */
+.box_about {
+  width: 1200px;
+  background-size: cover;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 30px;
+  }
+.box_about .title{
+  font-size: 24px;
+  font-weight: bold;
+  color: yellow;
+  text-align: center;
+  margin: 0 auto 60px;
+  }
+.box_about .text{
+  font-size: 18px;
+  color: black;
+  text-align: center;
+  margin: 0 auto 40px;
+  }
+.box_about .text1{
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  margin: 0 auto 40px;
+}
+.box_about .text2{
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  margin: 0 auto 40px;
+}
+.box_about .text3{
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  margin: 0 auto 40px;
+}
+.box_about .text4{
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  margin: 0 auto 80px;
+}
+
+
+  /* About 画像 */
+.box_about_img {
+  width: 1200px;
+  display: flex;
+  margin: 0 auto 60px;
+}
+.box_about_img .box_img {
+  width: 255px;
+  height: 255px;
+}
+.box_about_img .box_img01 img {
+  width: 100%;
+  object-fit: cover;
+  height: 255px;
+}
+
+/* スライドショー */
+.multiple { 
+  width: 1200px;
+  margin: 0 auto 60px;
+}
+.multiple img { width: 100%;}
+.multiple div { margin: 0 5px;}
+.multiple .slick-next { right: 17px; z-index: 100;}
+.multiple .slick-prev { left: 23px; z-index: 100;}
+
+
+
+
+
+/* ■Course */
+.course {
+  width: 1200px;
+  background-size: cover;
+  text-align: center;  
+  margin: 0 auto;
+  line-height: 30px;
+} 
+.course .title {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  text-align: center;  
+  margin: 0 auto 30px;
+}
+.course .text {
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  margin: 0 auto 60px; 
+  
+}
+  
+  
+  /* コースの画像 */
+  /* 親要素 */
+.box_course {
+  width: 1200px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  margin: 0 auto;
+}
+
+/* 子要素 */
+.box_course .box {
+  width: 50%;
+  background: #f5f5f5;
+}
+.box_course .box img {
+  width: 100%;
+}
+
+.box_course .box .text-wrapper {
+  margin: 120px 0 120px 50px; 
+}
+
+
+.box_course .box .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 auto 40px;
+}
+.box_course .box .text{ 
+  font-size: 16px;
+  line-height: 20px;
+}
+
+
+
+
+
+
+
+/* news */
+.news {
+  width: 1200px;
+  background-size: cover;
+  text-align: center;
+  margin: 0 auto 60px;
+}
+.news .title {
+  font-size: 24px;
+  font-weight: bold;
+  color: yellow;
+  margin: 60px auto 30px;
+}
+
+.news .text {
+  font-size: 16px;
+  margin: 0 auto 60px;
+}
+
+/* 画像テキスト */
+.box_news {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  }
+
+.box_news .box_news_wrapper{
+  margin: 0 15px 60px;
+}
+
+.box_news .box  {
+  width: 300px;
+  margin: 0 auto 30px;
+}
+
+.box_news .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 auto 24px;
+}
+
+.box_news .text {
+font-size: 16px;
+line-height: 30px;
+}
+
+/* MOREボタン */
+.more {
+  display: block;
+  width: 214px;
+  margin: auto;
+  padding: 24px ;
+  text-align: center;
+  background-color: #FFCC00;
+  color: white;
+  font-size: 18px;
+}
+
+
+
+
+/* access */
+.box_access {
+  width: 1200px;
+  background: #f5f5f5;
+  background-size: cover;
+  text-align: center;
+  padding-top: 60px;
+  margin:60px auto 60px;
+}
+.box_access .map {
+  margin: 0 auto 60px;
+}
+
+.box_access .title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto 30px;
+  }
+
+.box_access .text {
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto 60px;
+  }
+
+.table {
+  text-align: left;
+  margin:   0 auto 60px;
+  line-height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* contact */
+/* 文章 */
+.contact {
+  width: 1200px;
+  background-size: cover;
+  margin: 0 auto;
+}
+.contact .title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto 30px;
+}
+.contact .text {
+  font-size: 18px;
+  text-align: center;
+  margin: 0 auto 60px;
+}
+.contact .text1 {
+  font-size: 16px;
+  text-align: center;
+  line-height: 30px;
+  margin: 0 auto 30px;
+}
+.contact .text2 {
+  font-size: 16px;
+  text-align: center;
+  line-height: 30px;
+  margin: 0 auto 70px;
+}
+
+
+/* form部分 */
+.form-wrapper {
+  width: 640px;
+  margin: 0 auto 30px;
+}
+.form-inner {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 40px;
+  border-bottom: 1px solid #bfbfbf;
+} 
+.form-title {
+  width: 240px;
+  font-size: 16px;
+  text-align: center;
+  align-items: center;
+  border-top: 1px solid #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+}
+.form-item {
+  width: 400px;
+  font-size: 16px;
+  text-align: left;
+  align-items: center;
+  border-top: 1px solid #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.form-parts {
+  width: 100%;
+  border: solid 1px #c9c9c9;
+  margin:10px 0 0 0;
+}
+
+.form-wrapper .submit {
+  display: block;
+  width: 214px;
+  font-size: 18px;
+  color: white;
+  background: #FFCC00;
+  border: none;
+  padding: 24px;
+  margin: 30px auto 140px;
+}
+/* 
+input[type="checkbox"]{
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance:none;
+  margin: 0 10px 0 0;
+  border:solid 1px #a0a0a0;
+  border-radius: 50%;
+  }
+  input[type="checkbox" :checked{
+    background-color: #a0a0a0;
+  }  */
+
+/* フッター */
+  #footer {
+    width: 1200px;
+    background-size: cover;
+    background: #707070;
+    margin: auto;
+    padding: 30px;
+
+  }
+  #footer .text{
+    font-size: 16px;
+    color: white;
+    text-align: center;
+  }
+/* 
+.btn-top {
+  display: block;
+  height: 50px;
+  border-radius: 50%;
+  text-align: right;
+} */
+
+
+
+.fadein-bottom{
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  opacity: 0;
+}
+.fadein-bottom.active{
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+@media screen and  (max-width:640px){
+  /* about */
+  .box_main{
+  padding: 80px 0 60px;
+}
+
+
+
+}
